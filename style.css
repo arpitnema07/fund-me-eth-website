@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box {
+    background-color: #ffffff;
+    width: 90vmin;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+.top {
+    width: 100%;
+    display: flex;
+}
+p {
+    margin-left: auto;
+    margin-right: 0;
+}
+#stts {
+    color: red;
+}
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.main {
+    display: none;
+    margin-top: 10px;
+}
+.withdraw {
+    margin-left: auto;
+    margin-right: 0;
+}
+button:hover {
+    scale: 102%;
+}
+
+:focus {
+    outline: none;
+}
+
+.eth-input {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+} /* necessary to give position: relative to parent. */
+input[type="number"] {
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.effect {
+    border: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.effect ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399ff;
+    transition: 0.4s;
+}
+.effect:focus ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+#notification {
+    display: none;
+    margin: 20px;
+    width: 50%;
+    color: red;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
