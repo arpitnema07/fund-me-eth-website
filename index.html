@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Fund Me App</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="box">
-            <div class="top">
-                <h1>Fund Me</h1>
-                <p>Balance: <b id="stts">Disconnected</b></p>
-            </div>
-            <div class="main">
-                <div class="fund">
-                    <div class="eth-input">
-                        <input
-                            type="number"
-                            min="1"
-                            max="5"
-                            class="effect"
-                            id="eth-value"
-                            name="eth-value"
-                            value="0.1"
-                            placeholder="Etherium Value(e.g. 0.1)"
-                        />
-                        <span class="focus-border"></span>
-                    </div>
+  <head>
+    <title>Fund Me App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="top">
+        <h1>Fund Me</h1>
+        <p>Balance: <b id="stts">Disconnected</b></p>
+      </div>
+      <div class="main">
+        <div class="fund">
+          <div class="eth-input">
+            <input
+              type="number"
+              min="1"
+              max="5"
+              class="effect"
+              id="eth-value"
+              name="eth-value"
+              value="0.1"
+              placeholder="Etherium Value(e.g. 0.1)"
+            />
+            <span class="focus-border"></span>
+          </div>
 
-                    <button id="fund">Fund ETH</button>
-                </div>
-                <div class="withdraw">
-                    <button id="withdraw">Withdraw Funds</button>
-                </div>
-            </div>
-            <button id="connect">Connect</button>
-            <p id="notification">Alert!</p>
+          <button id="fund">Fund ETH</button>
         </div>
-        <!-- <script
+        <div class="withdraw">
+          <button id="withdraw">Withdraw Funds</button>
+        </div>
+      </div>
+      <button id="connect">Connect</button>
+      <p id="notification">Alert!</p>
+    </div>
+    <p>
+      Created By:
+      <a href="https://www.instagram.com/arpitnema.eth">Arpit Nema</a>
+    </p>
+    <!-- <script
             src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
             type="application/javascript"
         ></script> -->
-        <script type="module" src="./script.js"></script>
-    </body>
+    <script type="module" src="./script.js"></script>
+  </body>
 </html>
